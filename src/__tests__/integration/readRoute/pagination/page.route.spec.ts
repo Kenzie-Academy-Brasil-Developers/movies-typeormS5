@@ -1,8 +1,9 @@
 import supertest from 'supertest';
 import { DataSource } from 'typeorm';
-import app from '../../../../app';
+import { app } from '../../../../app';
 import { AppDataSource } from '../../../../data-source';
 import { readRouteMock } from '../../../mocks';
+
 
 describe('Tests on route: GET /movies. Must be able to list all movies.', () => {
   let connection: DataSource;

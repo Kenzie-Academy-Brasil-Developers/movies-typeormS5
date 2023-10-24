@@ -1,10 +1,10 @@
 import supertest from 'supertest'
 import { DataSource } from 'typeorm'
-import app from '../../app'
 import { AppDataSource } from '../../data-source'
 import { Movie } from '../../entities'
 import { iMovieRepo } from '../interfaces'
 import { createRouteMock } from '../mocks'
+import { app } from '../../app'
 
 describe('POST /movies', () => {
     let connection: DataSource
